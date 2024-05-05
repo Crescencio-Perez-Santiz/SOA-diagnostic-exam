@@ -9,7 +9,7 @@ def initialize_app(app, repository_tutor, repository_student):
     initialize_endpoints_get_students_by_tutor(repository_tutor, repository_student)
     initialize_endpoints_assign_students_to_tutor(repository_tutor, repository_student)
     
-    app.register_blueprint(tutor_blueprint, url_prefix="/tutores")
-    app.register_blueprint(get_all_tutors_blueprint, url_prefix="/tutores")
-    app.register_blueprint(get_students_by_tutor_blueprint, url_prefix="/tutores")
-    app.register_blueprint(assign_students_to_tutor_blueprint, url_prefix="/tutores")
+    app.register_blueprint(tutor_blueprint, url_prefix="/api/v1/tutores")
+    app.register_blueprint(get_all_tutors_blueprint, url_prefix="/api/v1/tutores")
+    app.register_blueprint(get_students_by_tutor_blueprint, url_prefix="/api/v1/tutores")
+    app.register_blueprint(assign_students_to_tutor_blueprint, url_prefix="/api/v1/tutores")

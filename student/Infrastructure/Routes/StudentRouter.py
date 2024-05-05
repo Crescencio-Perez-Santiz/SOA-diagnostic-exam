@@ -9,7 +9,7 @@ def initialize_app(app, student_repository, subject_repository):
     initialize_endpoints_get_subjects_by_student(student_repository)
     initialize_endpoints_assign_subjects_to_student(student_repository)
     
-    app.register_blueprint(student_blueprint, url_prefix="/students")
-    app.register_blueprint(get_all_students_blueprint, url_prefix="/students")
-    app.register_blueprint(get_subjects_by_student_blueprint, url_prefix="/students")
-    app.register_blueprint(assign_subjects_to_student_blueprint, url_prefix="/students")
+    app.register_blueprint(student_blueprint, url_prefix="/api/v1/students")
+    app.register_blueprint(get_all_students_blueprint, url_prefix="/api/v1/students")
+    app.register_blueprint(get_subjects_by_student_blueprint, url_prefix="/api/v1/students")
+    app.register_blueprint(assign_subjects_to_student_blueprint, url_prefix="/api/v1/students")

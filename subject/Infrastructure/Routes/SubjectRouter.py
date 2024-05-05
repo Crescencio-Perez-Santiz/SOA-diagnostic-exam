@@ -2,4 +2,4 @@ from subject.Infrastructure.Controllers.CreateSubjectController import subject_b
 
 def initialize_app(app, repository):
     initialize_endpoints(repository)
-    app.register_blueprint(subject_blueprint, url_prefix="/subjects")
+    app.register_blueprint(subject_blueprint, url_prefix="/api/v1/subjects")
